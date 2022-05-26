@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 26px;
+}
+.left-section
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.left-section img
+{
+    width: 46%;
+    padding-left: 16px;
+}
+.mid-section
+{
+    display: flex;
+    align-items: center;
+    margin-left: -5%;
+}
+.mid-section form
+{
+    display:flex;
+    height: 40px;
+    width: 628px;
+}
+.mid-section form input
+{
+    width: 100%;
+    border-radius: 2px 0 0 2px ;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+    outline: none;
+    text-transform: capitalize;
+}
+.mid-section button
+{
+    width: 64px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 2px 2px 0;
+    padding-top: 4px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+.mid-section button:hover{
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+    transition-duration: 0.3s;
+}
+.mid-section .mic
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right-section a{
+    padding-right: 18px;
+    text-decoration: none;
+    color: black;
+}
+.right-section a i{
+    font-size: 2.5rem;
+}
+/* content-area */
+.content-area
+{
+    height: calc(100vh - 56px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+aside
+{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+.nav-links
+{
+    display: flex;
+    align-items: center;
+    padding:5px 16px;
+    text-decoration: none;
+    color: black;
+}
+.nav-links:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-links span
+{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2em;
+    color: #030300;
+    text-transform: capitalize;
+}
+.active
+{
+    background-color: #e5e5ee;
+}
+#active-span
+{
+    font-weight: 600;
+}
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0;
+}
+nav p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: #606066;
+    text-transform: uppercase;
+}
+.channel-img
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+/* main */
+main{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    padding: 5px 5px;
+    background-color: #f0f0f0;
+}
+.youtube-ad
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.icon
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.ad-name
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration:none ;
+}
+.ad-name i
+{
+    color: red;
+    font-size: 5rem;
+    margin-right: 10px;
+}
+.ad-name span
+{
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+main .youtube-ad p
+{
+    width: 50%;
+    line-height: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+main .btn
+{
+    width: 150px;
+    height: 50px;
+    border: 2px solid blue;
+    background: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.videos-container
+{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.video
+{
+    width: 265px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.thumbnail
+{
+    width: 100%;
+    height: 187px;
+    margin-bottom: 12px;
+}
+.thumbnail img
+{
+    width: 100%;
+    height: 100%;
+}
+.video-details {
+    display: flex;
+}
+.creator-img img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.title a {
+    text-decoration: none;
+}
+.video-title
+{
+    color: rgb(3, 3, 3);
+    font-size: 1.6rem;
+    max-width: 278px;
+    font-weight: 700;
+    line-height: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.video-creator , .title span
+{
+    color: rgb(96, 96, 96);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+.video-creator:hover
+{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.9);
+}
